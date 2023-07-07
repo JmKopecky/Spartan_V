@@ -1,0 +1,25 @@
+The Halo-Harry Potter-Minecraft crossover mod that nobody but me asked for.
+
+Name Ideas:
+Of Shields and Swords
+The-Demon-Who-Lived
+Crafting Magical (Halo Word)
+ORION V (N.T.A.S.D)
+Spartan V *****
+
+Final Name: Spartan V
+File Name: dev.prognitio.spartanv
+
+
+
+Goal:
+
+Bring Halo-style Mjolnir armor enhanced with Harry Potter style magic to Minecraft.
+
+
+
+Armor system (Non-Mjolnir)
+Use (THISMODNAME) resources to craft armor plates.
+Inscribe runes on armor plates, have a limit to the amount of runes on armor plates, determined by rarity of material.
+Use armor plates to craft new non-mjolnir armor.
+runes add effects to the armor
