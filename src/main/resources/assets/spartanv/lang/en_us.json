@@ -1,3 +1,12 @@
 {
+  "block.spartanv.tungsten_ore": "Tungsten Ore",
+  "item.spartanv.raw_tungsten": "Raw Tungsten",
+  "item.spartanv.tungsten_ingot": "Tungsten Ingot",
+  "block.spartanv.yttrium_ore": "Yttrium Ore",
+  "item.spartanv.raw_yttrium": "Raw Yttrium",
+  "item.spartanv.yttrium_dust": "Yttrium Dust",
+  "block.spartanv.titanium_ore": "Titanium Ore",
+  "item.spartanv.raw_titanium": "Raw Titanium",
 
+  "creativemodetab.mod_tab": "Spartan V"
 }

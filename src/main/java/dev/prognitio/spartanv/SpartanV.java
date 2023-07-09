@@ -1,11 +1,13 @@
 package dev.prognitio.spartanv;
 
 import com.mojang.logging.LogUtils;
+import dev.prognitio.spartanv.items.CreativeTab;
 import dev.prognitio.spartanv.items.ItemsRegistry;
 import dev.prognitio.spartanv.items.blocks.BlocksRegistry;
 import net.minecraft.client.Minecraft;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.event.CreativeModeTabEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -34,12 +36,25 @@ public class SpartanV {
         BlocksRegistry.BLOCKITEMS.register(modEventBus);
         BlocksRegistry.BLOCKS.register(modEventBus);
 
+        modEventBus.addListener(this::addCreative);
+
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
 
+    }
+
+    private void addCreative(CreativeModeTabEvent.BuildContents event) {
+        if (event.getTab() == CreativeTab.SPARTAN_V_TAB) {
+            event.accept(BlocksRegistry.TITANIUM_ORE);
+            event.accept(ItemsRegistry.RAW_TITANIUM);
+            event.accept(BlocksRegistry.TUNGSTEN_ORE);
+            event.accept(ItemsRegistry.RAW_TUNGSTEN);
+            event.accept(BlocksRegistry.YTTRIUM_ORE);
+            event.accept(ItemsRegistry.RAW_YTTRIUM);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

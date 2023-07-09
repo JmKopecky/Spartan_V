@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "spartanv:titanium_ore",
+    "spartanv:tungsten_ore",
+    "spartanv:yttrium_ore"
+  ]
+}
